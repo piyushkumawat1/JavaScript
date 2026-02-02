@@ -1,7 +1,15 @@
-let num = prompt("Enter the number : ");
-if(num%5 ==0){
-    comsole.log("multiple of 5");
+let random = 100;
+do{
+    num = prompt("Guess the number : ");
+    if(num < 50){
+        console.log("Your number is too small, Guess little big");
+    }
+    else if (num >150){
+        console.log("Your number is too big, guess small number ")
+    }
+    else if (num == random){
+        console.log("Congratulation , You guess right Number");
+        break;
+    }
 }
-else{
-    console.log("Not multiple of 5")
-}
+while(num == random);
