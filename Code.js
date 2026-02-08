@@ -1,15 +1,10 @@
-let random = 100;
-do{
-    num = prompt("Guess the number : ");
-    if(num < 50){
-        console.log("Your number is too small, Guess little big");
+let word = prompt("Enter your name : ");
+count =0;
+for( const i of word){
+    if(i == 'a' ||i == 'i' ||i == 'e' ||i == 'o' ||i == 'u'){
+        count++;
     }
-    else if (num >150){
-        console.log("Your number is too big, guess small number ")
-    }
-    else if (num == random){
-        console.log("Congratulation , You guess right Number");
-        break;
-    }
+
 }
-while(num == random);
+console.log("Vowels = ",count);
+
