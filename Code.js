@@ -1,10 +1,12 @@
-let word = prompt("Enter your name : ");
-count =0;
-for( const i of word){
-    if(i == 'a' ||i == 'i' ||i == 'e' ||i == 'o' ||i == 'u'){
-        count++;
+class Student {
+    constructor(name,year,branch,section) {
+        console.log("Student information");
+        this.college = "Poornima college of Engineering";
+        this.name = name;
+        this.year= year;
+        this.branch= branch;
+        this.section =section;
     }
+};
 
-}
-console.log("Vowels = ",count);
-
+let student1 = new Student("Piyush Kumawat","1st",'AIDS',"J");
