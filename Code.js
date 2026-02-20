@@ -1,34 +1,16 @@
-let newBtn = document.querySelector("#mode");
-let currMode = "light";
-newBtn.addEventListener("click",()=>{
-     let oldheading = document.querySelector("h1");
-        
-    if(oldheading) {
-            oldheading.remove();
-        }
-    if(currMode ==="light"){
-          currMode = "dark";
-        document.querySelector("body").style.backgroundColor = "black";
-        let heading = document.createElement("h1");
-        document.body.appendChild(heading);
-        heading.style.textAlign = "center";
-        heading.innerText = "Dark Mode";
-        heading.style.color = "white";
-       
+class ToyotaCar{
+    constructor(brand,milege,rate){
+        console.log("object creating");
+            this.brand = brand;
+            this.milege = milege;
+            this.rate = rate;
     }
-    else{
-        let oldheading = document.querySelector("h1");
-        if(oldheading){
-        oldheading.remove();
-       }
-         currMode = "light"
-        document.querySelector("body").style.backgroundColor = "white";
-        let heading = document.createElement("h1");
-        document.body.appendChild(heading);
-        heading.style.textAlign = "center";
-        heading.innerText = "White Mode";
-        heading.style.color = "black";
-       
-       
+    start(){
+        console.log("Starting");
     }
-});
+    stop(){
+        console.log("stoped");
+    };
+}
+let Fortuner = new ToyotaCar("fortuner",12,"40lakh");
+let Innova = new ToyotaCar("Innova",18,"30Lakh");
