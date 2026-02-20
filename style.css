@@ -1,16 +1,7 @@
-body{
-    background-color : green;
-
-}
-#para{
-    color: rgb(247, 238, 255);
-}
-.box{
-    height: 100px;
+div {
     width: 100px;
-    background-color: aqua;
-    display: flex;
-    text-align: center;
-    align-content: center;
-    border: 2px black solid;
+    height: 100px;
+    background-color: blue;
+    border: 2px solid black;
+
 }
