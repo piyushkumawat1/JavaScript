@@ -1,16 +1,11 @@
-class ToyotaCar{
-    constructor(brand,milege,rate){
-        console.log("object creating");
-            this.brand = brand;
-            this.milege = milege;
-            this.rate = rate;
-    }
-    start(){
-        console.log("Starting");
-    }
-    stop(){
-        console.log("stoped");
-    };
+function getData(getId,getNextData){
+    return new Promise((resolve,reject) =>{
+        setTimeout(()=>{
+            console.log("data =",getId);
+            resolve("Success");
+            if(getNextData){
+                getNextData();
+            }
+        },5000);
+    });
 }
-let Fortuner = new ToyotaCar("fortuner",12,"40lakh");
-let Innova = new ToyotaCar("Innova",18,"30Lakh");
